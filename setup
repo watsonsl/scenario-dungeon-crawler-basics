@@ -15,6 +15,9 @@ for studentDIR in "${DIRS[@]}"; do
     imageLoc=(/$studentDIR/i/b/e/j/l/s/v/ /$studentDIR/i/a/g/kitty/m/q/w/ /$studentDIR/i/c/e/h/k/ /$studentDIR/i/a/e/kitty/ /$studentDIR/i/z/g/j/l/o/w/ /$studentDIR/i/d/f/kitty/k/n/t/)
     imageName=(002edurange.jpg edurange001.gif edurange3.GIF 4edurange.jpeg edurange006weeeeeee.png edurange5meow.JPG)
 
+    # Add an alias for all home directories
+    cat /tmp/scenario-dungeon-crawler-basics/cd_alias >> /$studentDIR/.bashrc
+    
     # Function to create a random number every time it is called
     random_Number(){
         R=$(($RANDOM%999999))
