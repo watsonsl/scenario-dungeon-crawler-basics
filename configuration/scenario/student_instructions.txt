@@ -1,0 +1,1 @@
+Your goal is to explore the dungeon using basic Linux commands. Begin by using ssh to log into the Dungeon external IP.

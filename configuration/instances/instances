@@ -1,0 +1,11 @@
+Dungeon
+Driver: not set
+IP: 10.0.0.10
+IP Dynamic: roll for new ip
+Internet Accessible: true
+Public IP: -
+SSH Ready: -
+OS: ubuntu 
+
+Roles:
+crawler

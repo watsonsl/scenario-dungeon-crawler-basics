@@ -1,0 +1,14 @@
+script "setup_dungeon_crawler_basics" do
+    interpreter "bash"
+    user "root"
+    cwd "/tmp"
+    code <<-EOH
+    cd /tmp
+    git clone https://github.com/watsonsl/scenario-dungeon-crawler-basics.git
+    cd /tmp/scenario-dungeon-crawler-basics
+    ./install
+    rm -r /tmp/scenario-dungeon-crawler-basics
+    touch /tmp/.installed
+    EOH
+    not_if "test -e /tmp/.installed"
+end

@@ -51,10 +51,10 @@ for studentDIR in "${DIRS[@]}"; do
     echo -e "Line 1\nLine 2\nLine 3\nLine 4\nLine 5" > /$studentDIR/editme/editme.txt
     chmod -R 777 /$studentDIR/editme
 
-    # This is a nifty way to create multiple folders all at once :3 
+    # This is a nifty way to create multiple folders all at once :3
     mkdir -p /$studentDIR/i/{a,b,c,d,z,y,x}/{e,f,g}/{h,kitty,j}/{k,l,m}/{n,o,p,q,r,s}/{t,u,v,w}
 
-    # Counter is used for the following for loop. Taking each image in the folder images and moving them to a new location 
+    # Counter is used for the following for loop. Taking each image in the folder images and moving them to a new location
     counter=0
     for filename in /tmp/scenario-getting-started/images/*;
     do

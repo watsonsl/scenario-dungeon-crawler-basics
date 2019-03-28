@@ -1,0 +1,5 @@
+Packages:
+git
+vim
+Recipes:
+setup_dungeon_crawler
