@@ -34,9 +34,6 @@ for studentDIR in "${DIRS[@]}"; do
     cp /tmp/scenario-dungeon-crawler-basics/toLearn/* /$studentDIR/toLearn/
     chmod -R 777 /$studentDIR/toLearn
 
-    # This copies the motd to each home directory
-    cat /tmp/scenario-dungeon-crawler-basics/motd/motd_home > /$studentDIR/instructions.txt
-
     # This takes all the files in stuff moves to /tmp/stuff
     cp /tmp/scenario-dungeon-crawler-basics/stuff/* /$studentDIR/stuff/
 

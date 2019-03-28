@@ -1,5 +1,7 @@
 Packages:
 git
+cowsay
+fortune
 vim
 Recipes:
 setup_dungeon_crawler
