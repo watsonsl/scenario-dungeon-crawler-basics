@@ -5,7 +5,11 @@ R=0
 DIRS=()
 
 # Add message whenever cd into a folder
-cat /tmp/scenario-dungeon-crawler-basics/aliases >> ~/.bashrc
+echo 'message_cd() {
+    builtin cd "$@" && { [ ! -f .cd-message ] || cat .cd-message 1>&2; }
+}
+
+alias cd=message_cd' >> ~/.bashrc
 . ~/.bashrc
 
 for FILE in /home/*; do
