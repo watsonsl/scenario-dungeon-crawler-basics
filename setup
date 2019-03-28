@@ -3,6 +3,11 @@
 # R is for assigning a random number to it
 R=0
 DIRS=()
+
+# Add message whenever cd into a folder
+cat /tmp/scenario-dungeon-crawler-basics/aliases >> ~/.bashrc
+. ~/.bashrc
+
 for FILE in /home/*; do
     if [[ -d $FILE ]]; then
         DIRS+=( "$FILE" )
@@ -42,6 +47,7 @@ for studentDIR in "${DIRS[@]}"; do
 
     # More setting up for the scenario
     mkdir /$studentDIR/textfiles
+    echo "ALERT - This is a message!" > /$studentDIR/textfiles/.cd-message
     echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam sed ullamcorper nisi. Morbi risus libero, ultricies in condimentum in, porttitor sit amet quam. Curabitur ultrices, magna ut viverra posuere, urna massa molestie ex, at pellentesque magna justo eget arcu. Vestibulum eget ante vulputate, euismod lacus in, lobortis nisl. Suspendisse tempus maximus erat ut consectetur. Donec molestie massa vitae commodo ultricies. Integer dignissim leo consequat nisi sodales, acvolutpat magna
     euismod. Maecenas urna sem, congue et libero nec, viverra condimentum ante. Praesent bibendum nulla ut sapien volutpat tincidunt. Sed sed nibh id ante maximus dignissim. Sed congue egestas lacinia. Duis non finibus arcu, a viverra mauris. Nunc ac felis ac turpis congue faucibus." > /$studentDIR/textfiles/one.txt
     echo "7625837645734265487236549367527365827634587623485763982576489237645832765489762385497632" > /$studentDIR/textfiles/two.txt
