@@ -18,7 +18,7 @@ for studentDIR in "${DIRS[@]}"; do
     imageLoc=(/$studentDIR/i/b/e/j/l/s/v/ /$studentDIR/i/a/g/kitty/m/q/w/ /$studentDIR/i/c/e/h/k/ /$studentDIR/i/a/e/kitty/ /$studentDIR/i/z/g/j/l/o/w/ /$studentDIR/i/d/f/kitty/k/n/t/)
     imageName=(002edurange.jpg edurange001.gif edurange3.GIF 4edurange.jpeg edurange006weeeeeee.png edurange5meow.JPG)
 
-    #copy motd into each home directory
+    # copy motd into each home directory
     cat /etc/motd > /home/$studentDIR/instructions.txt
 
     # Add an alias for all home directories
