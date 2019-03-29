@@ -1,10 +1,10 @@
-script "motd_home" do
+script "motd_entry" do
   interpreter "bash"
   user "root"
   cwd "/tmp"
   code <<-EOH
   cd /tmp
-  wget https://raw.githubusercontent.com/watsonsl/scenario-dungeon-crawler-basics/master/motd/motd_home -O /etc/motd
+  wget https://raw.githubusercontent.com/watsonsl/scenario-dungeon-crawler-basics/master/motd/motd_entry -O /etc/motd
   for each_home in $(ls /home/)
     do cat /etc/motd > /home/$each_home/instructions.txt
   done
