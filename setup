@@ -25,7 +25,7 @@ for studentDIR in "${DIRS[@]}"; do
     cat /tmp/scenario-dungeon-crawler-basics/cd_alias >> /$studentDIR/.bashrc
 
     # Copy the file hierarchy to each home directory
-    cp -R /tmp/scenario-dungeon-crawler-basics/structure/ /$studentDIR/
+    cp -R /tmp/scenario-dungeon-crawler-basics/structure/entrance /$studentDIR/
 
     # Function to create a random number every time it is called
     # random_Number(){
