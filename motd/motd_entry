@@ -14,12 +14,17 @@
               |_____| \__,_||__|__||___,_||_____| \___/ |__|__|     \____||__|\_||__|__|  \_/\_/  |_____|
 
 
-You have descended a flight of stone steps into a small entry chamber. Your quest is to discover the secrets
-of the dungeon.
+You are a wizard of some note whose quest it is to discover the lost scroll of Merlin as it is only with its
+powerful spell that you can defeat the scourge that threatens your land. You have heard that the scroll may
+be hidden in one of the rooms (folders) in this dungeon. It is dark and there may be spells protecting the
+magical and non-magical items (files). You will need to use your own magical spells (Linux command-line tools)
+to unveil the dungeon's secrets!
 
-Helpful commands: ls, cd, cat
+((Unless otherwise noted, you will be using the same password that brought you here.))
 
-Unless otherwise noted, you will be using the same password that brought you here.
+The first step, though, is to use your illumination spell to find the entrance itself and then to open the door!
+
+Helpful spells (commands): ls, cd
 
 *****************************************************************************************************************
 *****************************************************************************************************************
